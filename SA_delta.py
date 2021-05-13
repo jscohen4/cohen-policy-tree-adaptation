@@ -50,5 +50,5 @@ ax.set_yticklabels(['Levee', 'Dam', 'Offstream', 'Demand', 'GW'], rotation = 45,
 ax.set_ylabel('Cost multiplier', fontweight = 'bold')
 ax.set_xlabel('Action group', fontweight = 'bold')
 plt.tight_layout()
-plt.savefig('SA_files/SA_plot.svg')
+plt.savefig('figures/SA_plot.svg')
 plt.show()
