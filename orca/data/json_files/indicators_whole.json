@@ -1,0 +1,78 @@
+{
+	"I0": {"name":"fnf_AN_mu_roll5", "type":"fnf_annual", "stat":"mu","window":5, "delta":"no", "bounds":[6,34]},
+	"I1": {"name":"fnf_AN_mu_roll10", "type":"fnf_annual", "stat":"mu","window":10, "delta":"no", "bounds":[6,34]},
+	"I2": {"name":"fnf_AN_mu_roll20", "type":"fnf_annual","stat":"mu","window":20, "delta":"no", "bounds":[7,29]},
+	"I3": {"name":"fnf_AN_mu_roll30", "type":"fnf_annual","stat":"mu","window":30, "delta":"no", "bounds":[8,28]},
+	"I4": {"name":"fnf_AN_mu_roll50", "type":"fnf_annual","stat":"mu","window":50, "delta":"no", "bounds":[9,26]},  
+
+	"I5": {"name":"fnf_AN_mu_roll20_D5", "type":"fnf_annual", "stat":"mu","window":20, "delta":5, "bounds":[-312,369]},
+	"I6": {"name":"fnf_AN_mu_roll30_D5", "type":"fnf_annual", "stat":"mu","window":30, "delta":5, "bounds":[-223,285]},
+	"I7": {"name":"fnf_AN_mu_roll50_D5", "type":"fnf_annual", "stat":"mu","window":50, "delta":5, "bounds":[-132,128]},
+	"I8": {"name":"fnf_AN_mu_roll20_D30", "type":"fnf_annual","stat":"mu","window":20,"delta":30, "bounds":[-477,906]},  
+	"I9": {"name":"fnf_AN_mu_roll30_D20", "type":"fnf_annual","stat":"mu","window":30, "delta":20, "bounds":[-340,523]},   
+
+	"I10": {"name":"fnf_1D_pct50_yrs20", "type":"fnf_timescale", "window":20, "scale":"1D", "pct":0.5, "delta":"no", "bounds":[2,32]},
+	"I11": {"name":"fnf_3D_pct50_yrs20", "type":"fnf_timescale", "window":20, "scale":"3D", "pct":0.5, "delta":"no", "bounds":[8,96]},
+	"I12": {"name":"fnf_1D_pct50_yrs30", "type":"fnf_timescale", "window":30, "scale":"1D", "pct":0.5, "delta":"no", "bounds":[3,27]},
+	"I13": {"name":"fnf_3D_pct50_yrs30", "type":"fnf_timescale", "window":30, "scale":"3D", "pct":0.5, "delta":"no", "bounds":[9,81]},
+	"I14": {"name":"fnf_1D_pct50_yrs50", "type":"fnf_timescale", "window":50, "scale":"1D", "pct":0.5, "delta":"no", "bounds":[3,21]},
+	"I15": {"name":"fnf_3D_pct50_yrs50", "type":"fnf_timescale", "window":50, "scale":"3D", "pct":0.5, "delta":"no", "bounds":[1,65]},
+
+	"I16": {"name":"fnf_1M_pct30_yrs10","type":"fnf_timescale", "window":10, "scale":"1M", "pct":0.3, "delta":"no", "bounds":[45,283]},
+	"I17": {"name":"fnf_1M_pct50_yrs10","type":"fnf_timescale", "window":10, "scale":"1M", "pct":0.5, "delta":"no", "bounds":[78,1581]},
+	"I18": {"name":"fnf_3M_pct30_yrs10","type":"fnf_timescale", "window":10, "scale":"3M", "pct":0.3, "delta":"no", "bounds":[200,3127]},
+	"I19": {"name":"fnf_3M_pct50_yrs10","type":"fnf_timescale", "window":10, "scale":"3M", "pct":0.5, "delta":"no", "bounds":[346,6432]},
+	"I20": {"name":"fnf_1M_pct30_yrs20","type":"fnf_timescale", "window":20, "scale":"1M", "pct":0.3, "delta":"no", "bounds":[51,234]},
+	"I21": {"name":"fnf_1M_pct50_yrs20","type":"fnf_timescale", "window":20, "scale":"1M", "pct":0.5, "delta":"no", "bounds":[102,1206]},
+	"I22": {"name":"fnf_3M_pct30_yrs20","type":"fnf_timescale", "window":20, "scale":"3M", "pct":0.3, "delta":"no", "bounds":[217,1899]},
+	"I23": {"name":"fnf_3M_pct50_yrs20","type":"fnf_timescale", "window":20, "scale":"3M", "pct":0.5, "delta":"no", "bounds":[427,5319]},
+	"I24": {"name":"fnf_1M_pct30_yrs30","type":"fnf_timescale", "window":30, "scale":"1M", "pct":0.3, "delta":"no", "bounds":[52,205]},
+	"I25": {"name":"fnf_1M_pct50_yrs30","type":"fnf_timescale", "window":30, "scale":"1M", "pct":0.5, "delta":"no", "bounds":[116,1051]},
+	"I26": {"name":"fnf_3M_pct30_yrs30","type":"fnf_timescale", "window":30, "scale":"3M", "pct":0.3, "delta":"no", "bounds":[217,1814]},
+	"I27": {"name":"fnf_3M_pct50_yrs30","type":"fnf_timescale", "window":30, "scale":"3M", "pct":0.5, "delta":"no", "bounds":[448,5125]},
+	"I28": {"name":"fnf_1M_pct30_yrs50","type":"fnf_timescale", "window":50, "scale":"1M", "pct":0.3, "delta":"no", "bounds":[54,185]},
+	"I29": {"name":"fnf_1M_pct50_yrs50","type":"fnf_timescale", "window":50, "scale":"1M", "pct":0.5, "delta":"no", "bounds":[129,906]},
+	"I30": {"name":"fnf_3M_pct30_yrs50","type":"fnf_timescale", "window":50, "scale":"3M", "pct":0.3, "delta":"no", "bounds":[232,1429]},
+	"I31": {"name":"fnf_3M_pct50_yrs50","type":"fnf_timescale", "window":50, "scale":"3M", "pct":0.5, "delta":"no", "bounds":[518,4489]},
+
+	"I32": {"name":"fnf_1D_pct90_yrs20","type":"fnf_timescale", "window":20, "scale":"1D", "pct":0.9, "delta":"no", "bounds":[57,230]}, 
+	"I33": {"name":"fnf_3D_pct90_yrs20","type":"fnf_timescale", "window":20, "scale":"3D", "pct":0.9, "delta":"no", "bounds":[173,709]}, 
+	"I34": {"name":"fnf_1D_pct90_yrs30","type":"fnf_timescale", "window":30, "scale":"1D", "pct":0.9, "delta":"no", "bounds":[62,215]}, 
+	"I35": {"name":"fnf_3D_pct90_yrs30","type":"fnf_timescale", "window":30, "scale":"3D", "pct":0.9, "delta":"no", "bounds":[187,641]}, 
+	"I36": {"name":"fnf_1D_pct90_yrs50","type":"fnf_timescale", "window":50, "scale":"1D", "pct":0.9, "delta":"no", "bounds":[72,202]}, 
+	"I37": {"name":"fnf_3D_pct90_yrs50","type":"fnf_timescale", "window":50, "scale":"3D", "pct":0.9, "delta":"no", "bounds":[215,604]}, 
+
+	"I38": {"name":"fnf_tim50_mu_roll10","type":"fnf_timing", "window":10, "tim":0.5, "stat":"mu", "delta":"no", "bounds":[113,178]},
+	"I39": {"name":"fnf_tim50_mu_roll20","type":"fnf_timing", "window":20, "tim":0.5, "stat":"mu", "delta":"no", "bounds":[177,176]},
+	"I40": {"name":"fnf_tim50_mu_roll30","type":"fnf_timing", "window":30, "tim":0.5, "stat":"mu", "delta":"no", "bounds":[123,172]},
+	"I41": {"name":"fnf_tim50_mu_roll50","type":"fnf_timing", "window":50, "tim":0.5, "stat":"mu", "delta":"no", "bounds":[129,168]},
+
+	"I42": {"name":"fnf_tim70_mu_roll10","type":"fnf_timing", "window":10, "tim":0.7, "stat":"mu", "delta":"no", "bounds":[131,204]},
+	"I43": {"name":"fnf_tim70_mu_roll20","type":"fnf_timing", "window":20, "tim":0.7, "stat":"mu", "delta":"no", "bounds":[138,202]},
+	"I44": {"name":"fnf_tim70_mu_roll30","type":"fnf_timing", "window":30, "tim":0.7, "stat":"mu", "delta":"no", "bounds":[143,202]},
+	"I45": {"name":"fnf_tim70_mu_roll50","type":"fnf_timing", "window":50, "tim":0.7, "stat":"mu", "delta":"no", "bounds":[149,199]},
+
+	"I46": {"name":"fnf_tim90_mu_roll10","type":"fnf_timing", "window":10, "tim":0.9, "stat":"mu", "delta":"no", "bounds":[175,247]},
+	"I47": {"name":"fnf_tim90_mu_roll20","type":"fnf_timing", "window":20, "tim":0.9, "stat":"mu", "delta":"no", "bounds":[179,236]},
+	"I48": {"name":"fnf_tim90_mu_roll30","type":"fnf_timing", "window":30, "tim":0.9, "stat":"mu", "delta":"no", "bounds":[182,235]},
+	"I49": {"name":"fnf_tim90_mu_roll50","type":"fnf_timing", "window":50, "tim":0.9, "stat":"mu", "delta":"no", "bounds":[186,235]},
+
+	"I50": {"name":"fnf_tim90_sig_roll10","type":"fnf_timing", "window":10, "tim":0.9, "stat":"sig", "delta":"no", "bounds":[4,67]},
+	"I51": {"name":"fnf_tim90_sig_roll20","type":"fnf_timing", "window":20, "tim":0.9, "stat":"sig", "delta":"no", "bounds":[6,52]},
+	"I52": {"name":"fnf_tim90_sig_roll30","type":"fnf_timing", "window":30, "tim":0.9, "stat":"sig", "delta":"no", "bounds":[7,50]},
+	"I53": {"name":"fnf_tim90_sig_roll50","type":"fnf_timing", "window":50, "tim":0.9, "stat":"sig", "delta":"no", "bounds":[9,40]},
+
+	"I54": {"name":"swe_AN_max_mu_roll5","type":"swe_max", "window":5, "stat":"mu", "delta":"no", "bounds":[0,21]},
+	"I55": {"name":"swe_AN_max_mu_roll10","type":"swe_max", "window":10, "stat":"mu", "delta":"no", "bounds":[0,15]},
+	"I56": {"name":"swe_AN_max_mu_roll20","type":"swe_max", "window":20, "stat":"mu", "delta":"no", "bounds":[0,14]},
+	"I57": {"name":"swe_AN_max_mu_roll30","type":"swe_max", "window":30, "stat":"mu", "delta":"no", "bounds":[0,13]},
+	"I58": {"name":"swe_AN_max_mu_roll30","type":"swe_max", "window":50, "stat":"mu", "delta":"no", "bounds":[1,12]},
+
+	"I59": {"name":"demand_mu_roll5", "type":"demand", "window":5, "stat":"mu", "delta":"no", "bounds":[100,173]},
+	"I60": {"name":"demand_mu_roll10", "type":"demand", "window":10, "stat":"mu", "delta":"no", "bounds":[100,173]},
+	"I61": {"name":"demand_mu_roll20", "type":"demand", "window":20, "stat":"mu", "delta":"no", "bounds":[100,171]},
+	"I62": {"name":"demand_mu_roll30", "type":"demand", "window":30, "stat":"mu", "delta":"no", "bounds":[100,170]},
+	"I63": {"name":"demand_mu_roll50", "type":"demand", "window":50, "stat":"mu", "delta":"no", "bounds":[100,164]},
+
+	"I64": {"name": "rdiscount", "type":"discount", "bounds": [10,80]}
+}

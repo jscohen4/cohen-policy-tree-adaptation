@@ -1,0 +1,77 @@
+{
+	"I0": {"name":"fnf_AN_mu_roll5", "type":"fnf_annual", "stat":"mu","window":5, "delta":"no", "bounds":[15,30]},
+	"I1": {"name":"fnf_AN_mu_roll10", "type":"fnf_annual", "stat":"mu","window":10, "delta":"no", "bounds":[10,27]},
+	"I2": {"name":"fnf_AN_mu_roll20", "type":"fnf_annual","stat":"mu","window":20, "delta":"no", "bounds":[11,24]},
+	"I3": {"name":"fnf_AN_mu_roll30", "type":"fnf_annual","stat":"mu","window":30, "delta":"no", "bounds":[12,23]},
+	"I4": {"name":"fnf_AN_mu_roll50", "type":"fnf_annual","stat":"mu","window":50, "delta":"no", "bounds":[16,19]},  
+
+	"I5": {"name":"fnf_AN_mu_roll20_D5", "type":"fnf_annual", "stat":"mu","window":20, "delta":5, "bounds":[-2520,3090]},
+	"I6": {"name":"fnf_AN_mu_roll30_D5", "type":"fnf_annual", "stat":"mu","window":30, "delta":5, "bounds":[-1530,2150]},
+	"I7": {"name":"fnf_AN_mu_roll50_D5", "type":"fnf_annual", "stat":"mu","window":50, "delta":5, "bounds":[-1020,2900]},
+	"I8": {"name":"fnf_AN_mu_roll20_D30", "type":"fnf_annual","stat":"mu","window":20,"delta":30, "bounds":[-3000,7000]},  
+	"I9": {"name":"fnf_AN_mu_roll30_D20", "type":"fnf_annual","stat":"mu","window":30, "delta":20, "bounds":[-3000,3500]},   
+
+	"I10": {"name":"fnf_1D_pct50_yrs20", "type":"fnf_timescale", "window":20, "scale":"1D", "pct":0.5, "delta":"no", "bounds":[7,25]},
+	"I11": {"name":"fnf_3D_pct50_yrs20", "type":"fnf_timescale", "window":20, "scale":"3D", "pct":0.5, "delta":"no", "bounds":[25,75]},
+	"I12": {"name":"fnf_1D_pct50_yrs30", "type":"fnf_timescale", "window":30, "scale":"1D", "pct":0.5, "delta":"no", "bounds":[10,20]},
+	"I13": {"name":"fnf_3D_pct50_yrs30", "type":"fnf_timescale", "window":30, "scale":"3D", "pct":0.5, "delta":"no", "bounds":[25,65]},
+	"I14": {"name":"fnf_1D_pct50_yrs50", "type":"fnf_timescale", "window":50, "scale":"1D", "pct":0.5, "delta":"no", "bounds":[9,15]},
+	"I15": {"name":"fnf_3D_pct50_yrs50", "type":"fnf_timescale", "window":50, "scale":"3D", "pct":0.5, "delta":"no", "bounds":[15,45]},
+
+	"I16": {"name":"fnf_1M_pct30_yrs10","type":"fnf_timescale", "window":10, "scale":"1M", "pct":0.3, "delta":"no", "bounds":[85,213]},
+	"I17": {"name":"fnf_1M_pct50_yrs10","type":"fnf_timescale", "window":10, "scale":"1M", "pct":0.5, "delta":"no", "bounds":[200,1100]},
+	"I18": {"name":"fnf_3M_pct30_yrs10","type":"fnf_timescale", "window":10, "scale":"3M", "pct":0.3, "delta":"no", "bounds":[800,2200]},
+	"I19": {"name":"fnf_3M_pct50_yrs10","type":"fnf_timescale", "window":10, "scale":"3M", "pct":0.5, "delta":"no", "bounds":[2000,5000]},
+	"I20": {"name":"fnf_1M_pct30_yrs20","type":"fnf_timescale", "window":20, "scale":"1M", "pct":0.3, "delta":"no", "bounds":[70,200]},
+	"I21": {"name":"fnf_1M_pct50_yrs20","type":"fnf_timescale", "window":20, "scale":"1M", "pct":0.5, "delta":"no", "bounds":[250,1050]},
+	"I22": {"name":"fnf_3M_pct30_yrs20","type":"fnf_timescale", "window":20, "scale":"3M", "pct":0.3, "delta":"no", "bounds":[400,1500]},
+	"I23": {"name":"fnf_3M_pct50_yrs20","type":"fnf_timescale", "window":20, "scale":"3M", "pct":0.5, "delta":"no", "bounds":[1500,4500]},
+	"I24": {"name":"fnf_1M_pct30_yrs30","type":"fnf_timescale", "window":30, "scale":"1M", "pct":0.3, "delta":"no", "bounds":[100,160]},
+	"I25": {"name":"fnf_1M_pct50_yrs30","type":"fnf_timescale", "window":30, "scale":"1M", "pct":0.5, "delta":"no", "bounds":[300,800]},
+	"I26": {"name":"fnf_3M_pct30_yrs30","type":"fnf_timescale", "window":30, "scale":"3M", "pct":0.3, "delta":"no", "bounds":[500,1500]},
+	"I27": {"name":"fnf_3M_pct50_yrs30","type":"fnf_timescale", "window":30, "scale":"3M", "pct":0.5, "delta":"no", "bounds":[1500,4000]},
+	"I28": {"name":"fnf_1M_pct30_yrs50","type":"fnf_timescale", "window":50, "scale":"1M", "pct":0.3, "delta":"no", "bounds":[90,145]},
+	"I29": {"name":"fnf_1M_pct50_yrs50","type":"fnf_timescale", "window":50, "scale":"1M", "pct":0.5, "delta":"no", "bounds":[300,700]},
+	"I30": {"name":"fnf_3M_pct30_yrs50","type":"fnf_timescale", "window":50, "scale":"3M", "pct":0.3, "delta":"no", "bounds":[600,1000]},
+	"I31": {"name":"fnf_3M_pct50_yrs50","type":"fnf_timescale", "window":50, "scale":"3M", "pct":0.5, "delta":"no", "bounds":[1500,3500]},
+
+	"I32": {"name":"fnf_1D_pct90_yrs20","type":"fnf_timescale", "window":20, "scale":"1D", "pct":0.9, "delta":"no", "bounds":[80,180]}, 
+	"I33": {"name":"fnf_3D_pct90_yrs20","type":"fnf_timescale", "window":20, "scale":"3D", "pct":0.9, "delta":"no", "bounds":[250,550]}, 
+	"I34": {"name":"fnf_1D_pct90_yrs30","type":"fnf_timescale", "window":30, "scale":"1D", "pct":0.9, "delta":"no", "bounds":[100,180]}, 
+	"I35": {"name":"fnf_3D_pct90_yrs30","type":"fnf_timescale", "window":30, "scale":"3D", "pct":0.9, "delta":"no", "bounds":[255,550]}, 
+	"I36": {"name":"fnf_1D_pct90_yrs50","type":"fnf_timescale", "window":50, "scale":"1D", "pct":0.9, "delta":"no", "bounds":[100,170]}, 
+	"I37": {"name":"fnf_3D_pct90_yrs50","type":"fnf_timescale", "window":50, "scale":"3D", "pct":0.9, "delta":"no", "bounds":[300,500]}, 
+
+	"I38": {"name":"fnf_tim50_mu_roll10","type":"fnf_timing", "window":10, "tim":0.5, "stat":"mu", "delta":"no", "bounds":[125,160]},
+	"I38": {"name":"fnf_tim50_mu_roll20","type":"fnf_timing", "window":20, "tim":0.5, "stat":"mu", "delta":"no", "bounds":[130,155]},
+	"I40": {"name":"fnf_tim50_mu_roll30","type":"fnf_timing", "window":30, "tim":0.5, "stat":"mu", "delta":"no", "bounds":[135,150]},
+	"I41": {"name":"fnf_tim50_mu_roll50","type":"fnf_timing", "window":50, "tim":0.5, "stat":"mu", "delta":"no", "bounds":[140,160]},
+
+	"I42": {"name":"fnf_tim70_mu_roll10","type":"fnf_timing", "window":10, "tim":0.7, "stat":"mu", "delta":"no", "bounds":[145,190]},
+	"I43": {"name":"fnf_tim70_mu_roll20","type":"fnf_timing", "window":20, "tim":0.7, "stat":"mu", "delta":"no", "bounds":[153,185]},
+	"I44": {"name":"fnf_tim70_mu_roll30","type":"fnf_timing", "window":30, "tim":0.7, "stat":"mu", "delta":"no", "bounds":[155,185]},
+	"I45": {"name":"fnf_tim70_mu_roll50","type":"fnf_timing", "window":50, "tim":0.7, "stat":"mu", "delta":"no", "bounds":[160,190]},
+
+	"I46": {"name":"fnf_tim90_mu_roll10","type":"fnf_timing", "window":10, "tim":0.9, "stat":"mu", "delta":"no", "bounds":[195,250]},
+	"I47": {"name":"fnf_tim90_mu_roll20","type":"fnf_timing", "window":20, "tim":0.9, "stat":"mu", "delta":"no", "bounds":[195,225]},
+	"I48": {"name":"fnf_tim90_mu_roll30","type":"fnf_timing", "window":30, "tim":0.9, "stat":"mu", "delta":"no", "bounds":[195,225]},
+	"I49": {"name":"fnf_tim90_mu_roll50","type":"fnf_timing", "window":50, "tim":0.9, "stat":"mu", "delta":"no", "bounds":[200,220]},
+
+	"I50": {"name":"fnf_tim90_sig_roll10","type":"fnf_timing", "window":10, "tim":0.9, "stat":"sig", "delta":"no", "bounds":[20,50]},
+	"I51": {"name":"fnf_tim90_sig_roll20","type":"fnf_timing", "window":20, "tim":0.9, "stat":"sig", "delta":"no", "bounds":[20,40]},
+	"I52": {"name":"fnf_tim90_sig_roll30","type":"fnf_timing", "window":30, "tim":0.9, "stat":"sig", "delta":"no", "bounds":[20,35]},
+	"I53": {"name":"fnf_tim90_sig_roll50","type":"fnf_timing", "window":50, "tim":0.9, "stat":"sig", "delta":"no", "bounds":[18,32]},
+
+	"I54": {"name":"swe_AN_max_mu_roll5","type":"swe_max", "window":5, "stat":"mu", "delta":"no", "bounds":[3,8]},
+	"I55": {"name":"swe_AN_max_mu_roll10","type":"swe_max", "window":10, "stat":"mu", "delta":"no", "bounds":[3,8]},
+	"I56": {"name":"swe_AN_max_mu_roll20","type":"swe_max", "window":20, "stat":"mu", "delta":"no", "bounds":[3,8]},
+	"I57": {"name":"swe_AN_max_mu_roll30","type":"swe_max", "window":30, "stat":"mu", "delta":"no", "bounds":[3,8]},
+	"I58": {"name":"swe_AN_max_mu_roll50","type":"swe_max", "window":50, "stat":"mu", "delta":"no", "bounds":[6,8]},
+
+	"I59": {"name":"demand_mu_roll5", "type":"demand", "window":5, "stat":"mu", "delta":"no", "bounds":[115,125]},
+	"I60": {"name":"demand_mu_roll10", "type":"demand", "window":10, "stat":"mu", "delta":"no", "bounds":[115,125]},
+	"I61": {"name":"demand_mu_roll20", "type":"demand", "window":20, "stat":"mu", "delta":"no", "bounds":[115,125]},
+	"I62": {"name":"demand_mu_roll20", "type":"demand", "window":30, "stat":"mu", "delta":"no", "bounds":[115,125]},
+
+	"I64": {"name": "rdiscount", "type":"discount", "bounds": [32,58]}
+}

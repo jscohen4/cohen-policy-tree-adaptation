@@ -1,0 +1,21 @@
+{
+    "capacity": 0,
+    "capacity_1": 1500,
+    "capacity_2": 1800,
+    "capacity_3": 3000,
+    "in_capacity_1": 8600,
+    "in_capacity_2": 10600,
+    "in_capacity_3": 15000,
+    "out_capacity_1": 5100,
+    "out_capacity_2": 6600,
+    "out_capacity_3": 8100,    
+    "freeport_constraint": [11000,11000,13000,15000,13000,11000,11000,11000,11000,11000,11000,11000],
+    "red_bluff_constraint": 3250,
+    "cost_1":3000,
+    "cost_2":5200,
+    "cost_3":10000,
+    "cost_expand_1_2":4000,
+    "cost_expand_1_3":9000,
+    "cost_expand_2_3":7000,
+    "maint_cost":0.005000
+}

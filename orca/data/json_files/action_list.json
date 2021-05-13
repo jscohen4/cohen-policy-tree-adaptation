@@ -1,0 +1,25 @@
+{"actions":
+	["standard_rule",
+	"OpPolA",
+	"OpPolB",
+	"Demand_90",
+	"Demand_80",
+	"Demand_70",
+	"GW0.1",
+	"GW0.5",
+	"GW1",
+	"GW2",
+	"GW4",
+	"Levee_1",
+	"Levee_2",
+	"Levee_3",
+	"Levee_4",
+	"Levee_5",
+	"Dam_1",
+	"Dam_2",
+	"Dam_3",
+	"Sites_1",
+	"Sites_2",
+	"Sites_3"
+	]
+}
