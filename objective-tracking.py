@@ -23,7 +23,7 @@ def init_plotting():
 init_plotting()
 
 ########baseline results
-baseline_results = pd.read_csv('baseline-results.csv',index_col = 0, parse_dates = True)
+baseline_results = pd.read_csv('orca/misc-files/baseline-results.csv',index_col = 0, parse_dates = True)
 baseline_results = baseline_results.shift(periods=1, freq='AS-OCT')
 
 results_AN_cum_baseline = baseline_results.resample('AS-OCT').sum().cumsum()
@@ -71,7 +71,7 @@ results_AN_cum_baseline['carryover'] = results_AN_cum_baseline.carryover.cumsum(
 
 ############results
 # results = pd.read_csv('OpPol-results.csv',index_col = 0, parse_dates = True)
-results = pd.read_csv('policy-tracker-sctest-11.csv',index_col = 0, parse_dates = True)
+results = pd.read_csv('misc-files/policy-tracker-sctest-11.csv',index_col = 0, parse_dates = True)
 results = results.shift(periods=1, freq='AS-OCT')
 results['build_cost'].loc['2066-10-01'] = 966.980524/365
 print(results['build_cost'].loc['2066-10-01'])
