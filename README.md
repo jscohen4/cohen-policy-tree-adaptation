@@ -9,10 +9,23 @@ This work is is build off and couples two existing repositories: [ORCA](https://
 ## Requirements:
 [NumPy](http://www.numpy.org/), [Pandas](http://pandas.pydata.org/), [Matplotlib](http://matplotlib.org/), [Scipy](http://www.scipy.org/), [Scikit-learn](http://scikit-learn.org/), [Seaborn](https://seaborn.pydata.org/), [MPI for Python](https://mpi4py.readthedocs.io/en/stable/) (optional), [PyGraphviz](https://pygraphviz.github.io/) (optional).
 
-## Methods:
-The following instrutctions correspond to the methods section of the paper.
+## Contents
+`ORCA`:
+
+`ptreeopt`:
+
+`misc-files`:
+
+`snapshots`:
+
+`SA_files`:
+
+`figure-scripts`:
 
 `baseline-cc.py` and `baseline-cc-parallel.py`: these scripts run baseline ORCA climate simulations, either locally on one processor or in parallel on 97 processors. The initially formated climate projection data must first be downloaded from the [orca_cmip5_inputs](https://github.com/jscohen4/orca_cmip5_inputs) repository. 
+
+## Paper methods and figures:
+The following instrutctions correspond to the methods section of the paper.
 
 `optimization-parallel.py` performs the policy search described in Section 2.3.2: Multi-objective optimization. Optimized policies are stored as pickle files in the `snapshots` folder.
 
