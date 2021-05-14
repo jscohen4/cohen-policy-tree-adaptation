@@ -10,7 +10,7 @@ This work is is build off and couples two existing repositories: [ORCA](https://
 [NumPy](http://www.numpy.org/), [Pandas](http://pandas.pydata.org/), [Matplotlib](http://matplotlib.org/), [Scipy](http://www.scipy.org/), [Scikit-learn](http://scikit-learn.org/), [Seaborn](https://seaborn.pydata.org/), [MPI for Python](https://mpi4py.readthedocs.io/en/stable/) (optional), [PyGraphviz](https://pygraphviz.github.io/) (optional).
 
 ## Contents
-`ORCA`:
+`orca`:
 
 `ptreeopt`:
 
