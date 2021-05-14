@@ -6,3 +6,6 @@ Cohen, J.S. & Herman, J.D., Dynamic adaptation of water resources systems under 
 
 ## Requirements:
 [NumPy](http://www.numpy.org/), [Pandas](http://pandas.pydata.org/), [Matplotlib](http://matplotlib.org/), [Scipy](http://www.scipy.org/), [Scikit-learn](http://scikit-learn.org/), [Seaborn](https://seaborn.pydata.org/), [MPI for Python](https://mpi4py.readthedocs.io/en/stable/).
+
+## Methods:
+The following instrutctions correspond to the methods section of the paper.
