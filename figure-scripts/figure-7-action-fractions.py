@@ -23,19 +23,19 @@ def init_plotting():
   plt.rcParams['xtick.labelsize'] = 0.8*plt.rcParams['font.size']
   plt.rcParams['ytick.labelsize'] = 0.9*plt.rcParams['font.size']
 init_plotting()
-# fig, ((ax0,ax1),(ax2,ax3)) = plt.subplots(2,2)
-fig = plt.figure(constrained_layout=True)
+fig, ((ax0,ax1),(ax2,ax3)) = plt.subplots(2,2)
+# fig = plt.figure(constrained_layout=True)
 widths = [1,1]
 heights = [1,0.25]
-spec = gridspec.GridSpec(ncols=2, nrows=2, figure=fig, width_ratios = widths, height_ratios =heights)
+spec = gridspec.GridSpec(ncols=2, nrows=2, width_ratios = widths, height_ratios =heights)
 ax0 = fig.add_subplot(spec[0, 0])
 ax1 = fig.add_subplot(spec[0, 1])
 ax2 = fig.add_subplot(spec[1, 0])
 ax3 = fig.add_subplot(spec[1, 1])
 action_dict = json.load(open('../orca/data/json_files/action_list.json'))
 action_names = action_dict['actions']
-robust_policy_adjust = json.load(open('../nondom-tracker/seed_policy_adjust_robust.json'))
-policy_adjust = json.load(open('../nondom-tracker/seed_policy_adjust.json'))
+robust_policy_adjust = json.load(open('../misc-files/nondom-tracker/seed_policy_adjust_robust.json'))
+policy_adjust = json.load(open('../misc-files/nondom-tracker/seed_policy_adjust.json'))
 
 #########################################robust policies#################################################
 #########################################################################################################
