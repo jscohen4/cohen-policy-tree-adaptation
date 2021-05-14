@@ -1,4 +1,4 @@
-# cohen-policy-tree-adaptation
+# Dynamic adaptation with policy tree optimization
 
 This repository contains all code corresponding to methods used to generate data for figures in the following paper:
 
