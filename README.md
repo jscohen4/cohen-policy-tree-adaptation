@@ -27,6 +27,24 @@ This work is is build off and couples two existing repositories: [ORCA](https://
 ## Paper methods and figures:
 The following instrutctions correspond to the methods section of the paper.
 
-`optimization-parallel.py` performs the policy search described in Section 2.3.2: Multi-objective optimization. Optimized policies are stored as pickle files in the `snapshots` folder.
+Section 3.1.1: cmip5 inputs
 
-`
+Section 3.1.2: demand
+
+Section 3.2.1: `orca/data/calc_indicators.py`
+
+Section 3.2.2: actions, various scripts
+
+Section 3.2.3:`optimization-parallel.py` performs the policy search: Multi-objective optimization. Optimized policies are stored as pickle files in the `snapshots` folder.
+
+Section 3.3.1: `testing-outofsample.py` and `robustness-calculation.py`. Figure 3 script
+
+Section 3.3.2: figure 4, 5 and 6 scripts
+
+Secction 3.4.1: figure 7 scripts
+
+Section 3.4.2: SA files
+
+Section 3.4.3: action hits and figure 8
+
+Section 3.4.4: figure 10 and 11
