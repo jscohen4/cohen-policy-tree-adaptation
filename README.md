@@ -39,7 +39,7 @@ The following instrutctions correspond to subsections in **Section 3 Methods**, 
 
 **3.2.2 Actions**: various scripts
 
-**3.2.3 Multi-objective optimization**`:optimization-parallel.py` performs the policy search: Multi-objective optimization. Optimized policies are stored as pickle files in the `snapshots` folder.
+**3.2.3 Multi-objective optimization**:`optimization-parallel.py` performs the policy search over the 235 testing scenarios. Optimized policies and objective values are stored as pickle files in the `snapshots` folder.
 
 **3.3.1 Robusness testing**: `testing-outofsample.py` and `robustness-calculation.py`. Figure 3 script
 
