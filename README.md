@@ -10,7 +10,7 @@ This work is is build off and couples two existing repositories: [ORCA](https://
 [NumPy](http://www.numpy.org/), [Pandas](http://pandas.pydata.org/), [Matplotlib](http://matplotlib.org/), [Scipy](http://www.scipy.org/), [Scikit-learn](http://scikit-learn.org/), [Seaborn](https://seaborn.pydata.org/), [MPI for Python](https://mpi4py.readthedocs.io/en/stable/) (optional), [PyGraphviz](https://pygraphviz.github.io/) (optional).
 
 ## Contents
-`orca`:
+`orca`: Contains code and input data for the simulation more used in this study: Operations of Reservoirs in California. The model is briefly described in Section 2.2. For further infocmation on ORCA see the [original orca repository](https://github.com/jscohen4/orca) and [Cohen et. al., 2020](https://ascelibrary.org/doi/10.1061/%28ASCE%29WR.1943-5452.0001300).
 
 `ptreeopt`:
 
