@@ -29,10 +29,11 @@ The following instrutctions correspond to subsections in **Section 3 Methods**, 
 **3.1.1 Climate projections**: : The original input climate data files should first be obtained from the repository [jscohen4/orca_cmip5_inputs](https://github.com/jscohen4/orca_cmip5_inputs) and the directory `input_climate_files` put in the directory `orca/data`. To process climate data, run `baseline-cc-parallel.py` remotely on 97 processors or `baseline-cc.py` on 1 processor. To ensure that climate data is processed to be input to ORCA, ensure that `calc_indices = True` and `climate_forecasts = True` in these scripts. This will cause the sript to run `orca/data/calc_indices.py` and `orca/data/forecasting.py`. The original data for [USBR CMIP5 climate and hydrology projections](https://gdo-dcp.ucllnl.org/downscaled_cmip_projections/dcpInterface.html) are also publically available. 
 
 
-**3.1.2 Water demand and land use projections**: [Processed demand data](https://drive.google.com/drive/folders/1w8r_4D7e96Yw6I-GvURalE3cw84Yn-Ma?usp=sharing) should be added as `orca/data/demand_files`. Original demand data is also publically available for [USGS FORE-SCE CONUS](https://www.sciencebase.gov/catalog/item/5b96c2f9e4b0702d0e826f6d), [USGS LUCAS California](https://www.sciencebase.gov/catalog/item/587fb408e4b085de6c11f389), and 
-[DOE GCAM- CONUS](https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=1216). 
+**3.1.2 Water demand and land use projections**: [Demand data](https://drive.google.com/drive/folders/1w8r_4D7e96Yw6I-GvURalE3cw84Yn-Ma?usp=sharing) should be added as `orca/data/demand_files`. The demand data is further processed by running one of the baseline simulation scripts with `tree_input_files = True` set.Original demand data is also publically available for [USGS FORE-SCE CONUS](https://www.sciencebase.gov/catalog/item/5b96c2f9e4b0702d0e826f6d), [USGS LUCAS California](https://www.sciencebase.gov/catalog/item/587fb408e4b085de6c11f389), and 
+[DOE GCAM CONUS](https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=1216). 
 
-**3.1.3 Scenario ensemble**: `orca/data/calc.py`
+**3.1.3 Scenario ensemble**: The full scenarios necessary for baseline simulations and policy-tree optimization runs can be obtained by running one of the two baseline scripts with the following options set:`calc_indices = True`, `climate_forecasts = True`, `tree_input_files = True`, `indicator_data_file = True`. Setting `simulation = True` will also run the baseline simulations. 
+
 
 **3.2.1 Indicators**: `orca/data/calc_indicators.py`
 
