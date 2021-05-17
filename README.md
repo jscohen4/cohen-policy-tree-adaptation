@@ -26,10 +26,11 @@ This work is is build off and couples two existing repositories: [ORCA](https://
 ## Paper methods and figures:
 The following instrutctions correspond to subsections in **Section 3 Methods**, and their corrsponding subsections in **Section 4 Results and discussion**.
 
-**3.1.1 Climate projections**: : The original input climate data files should first be obtained from the repository [jscohen4/orca_cmip5_inputs](https://github.com/jscohen4/orca_cmip5_inputs) and the directory `input_climate_files` put in the directory `orca/data`. To process data, run `baseline-cc-parallel.py` remotely on 97 processors or `baseline-cc.py` on 1 processor. To ensure that climate data is processed to be input to ORCA, ensure that `calc_indices = True` and `climate_forecasts = True` in these scripts. The original data for [USBR CMIP5 climate and hydrology projections](https://gdo-dcp.ucllnl.org/downscaled_cmip_projections/dcpInterface.html) is also publically available. 
+**3.1.1 Climate projections**: : The original input climate data files should first be obtained from the repository [jscohen4/orca_cmip5_inputs](https://github.com/jscohen4/orca_cmip5_inputs) and the directory `input_climate_files` put in the directory `orca/data`. To process climate data, run `baseline-cc-parallel.py` remotely on 97 processors or `baseline-cc.py` on 1 processor. To ensure that climate data is processed to be input to ORCA, ensure that `calc_indices = True` and `climate_forecasts = True` in these scripts. This will cause the sript to run `orca/data/calc_indices.py` and `orca/data/forecasting.py`. The original data for [USBR CMIP5 climate and hydrology projections](https://gdo-dcp.ucllnl.org/downscaled_cmip_projections/dcpInterface.html) are also publically available. 
 
 
-**3.1.2 Water demand and land use projections**: Please contact author to obtain original demand files that should be present in `orca/data/demand_files` as they are too large for this repository. Original demand data is also publically available from [USGS FORE-SCE CONUS](https://www.sciencebase.gov/catalog/item/5b96c2f9e4b0702d0e826f6d), [USGS LUCAS California](https://www.sciencebase.gov/catalog/item/587fb408e4b085de6c11f389), and 
+**3.1.2 Water demand and land use projections**: Please contact author to obtain original demand files that should be present in `orca/data/demand_files` as they are too large for this repository. Original demand data is also publically available for [USGS FORE-SCE CONUS](https://www.sciencebase.gov/catalog/item/5b96c2f9e4b0702d0e826f6d), [USGS LUCAS California](https://www.sciencebase.gov/catalog/item/587fb408e4b085de6c11f389), and 
+[DOE GCAM- CONUS](https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=1216). 
 
 **3.1.3 Scenario ensemble**: `orca/data/calc.py`
 
