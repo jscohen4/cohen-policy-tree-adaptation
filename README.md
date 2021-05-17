@@ -7,10 +7,10 @@ Cohen, J.S. & Herman, J.D., Dynamic adaptation of water resources systems under 
 This work is is build off and couples two existing repositories: [ORCA](https://github.com/jscohen4/orca) and [policy tree optimization](https://github.com/jdherman/ptreeopt). 
 
 ## Requirements:
-[NumPy](http://www.numpy.org/), [Pandas](http://pandas.pydata.org/), [Matplotlib](http://matplotlib.org/), [Scipy](http://www.scipy.org/), [Scikit-learn](http://scikit-learn.org/), [Seaborn](https://seaborn.pydata.org/), [MPI for Python](https://mpi4py.readthedocs.io/en/stable/) (optional), [PyGraphviz](https://pygraphviz.github.io/) (optional).
+[NumPy](http://www.numpy.org/), [Pandas](http://pandas.pydata.org/), [Matplotlib](http://matplotlib.org/), [Scipy](http://www.scipy.org/), [Scikit-learn](http://scikit-learn.org/), [SALIB](https://github.com/SALib/SALib), [Seaborn](https://seaborn.pydata.org/), [MPI for Python](https://mpi4py.readthedocs.io/en/stable/) (optional), [PyGraphviz](https://pygraphviz.github.io/) (optional).
 
 ## Contents
-`orca`: Contains code and input data for the simulation more used in this study: Operations of Reservoirs in California. The model is briefly described in Section 2.2. For further infocmation on ORCA see the [original orca repository](https://github.com/jscohen4/orca) and [Cohen et. al., 2020](https://ascelibrary.org/doi/10.1061/%28ASCE%29WR.1943-5452.0001300).
+`orca`: Contains code and input data for the simulation more used in this study: Operations of Reservoirs in California. The model is briefly described in Section 2.2. For further infocmation on ORCA see the [original ORCA repository](https://github.com/jscohen4/orca) and [Cohen et. al., 2020](https://ascelibrary.org/doi/10.1061/%28ASCE%29WR.1943-5452.0001300).
 
 `ptreeopt`:
 
