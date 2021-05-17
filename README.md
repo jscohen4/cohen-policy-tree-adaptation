@@ -24,7 +24,7 @@ This work is is build off and couples two existing repositories: [ORCA](https://
 
 
 ## Paper methods and figures:
-The following instrutctions correspond to subsections in **Section 3 Methods**, and their corrsponding subsections in **Section 4 Results and discussion** in results and discussion.
+The following instrutctions correspond to subsections in Section **3 Methods**, and their corrsponding subsections in Section **4 Results and discussion**.
 
 **3.1.1 Climate projections**: : cmip5 inputs
 
