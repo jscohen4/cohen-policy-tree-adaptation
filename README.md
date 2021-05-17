@@ -22,7 +22,7 @@ This work is is build off and couples two existing repositories: [ORCA](https://
 
 `figure-scripts`:
 
-`baseline-cc.py` and `baseline-cc-parallel.py`: these scripts run baseline ORCA climate simulations, either locally on one processor or in parallel on 97 processors. The initially formated climate projection data must first be downloaded from the [orca_cmip5_inputs](https://github.com/jscohen4/orca_cmip5_inputs) repository and added to `orca/data`
+`baseline-cc.py` and `baseline-cc-parallel.py`: these scripts run baseline ORCA climate simulations, either locally on one processor or in parallel on 97 processors. The initially formated climate projection data must first be downloaded from the [orca_cmip5_inputs](https://github.com/jscohen4/orca_cmip5_inputs) repository and added to `orca/data`.
 
 ## Paper methods and figures:
 The following instrutctions correspond to the methods section of the paper.
