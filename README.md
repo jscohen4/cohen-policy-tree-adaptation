@@ -26,7 +26,8 @@ This work is is build off and couples two existing repositories: [ORCA](https://
 ## Paper methods and figures:
 The following instrutctions correspond to subsections in **Section 3 Methods**, and their corrsponding subsections in **Section 4 Results and discussion**.
 
-**3.1.1 Climate projections**: : cmip5 inputs
+**3.1.1 Climate projections**: : The original input climate data files should first be obtained from the repository [jscohen4/orca_cmip5_inputs](https://github.com/jscohen4/orca_cmip5_inputs) and the directory `input_climate_files` put in the directory `orca/data`. To process data, run `baseline-cc-parallel.py` remotely on 97 processors or `baseline-cc.py` on 1 processor. To ensure that climate data is processed to be input to ORCA, ensure that `calc_indices = True` and `climate_forecasts = True` in these scripts. 
+
 
 **3.1.2 Water demand and land use projections**: demand
 
