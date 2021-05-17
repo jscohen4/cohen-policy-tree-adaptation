@@ -29,7 +29,7 @@ The following instrutctions correspond to subsections in **Section 3 Methods**, 
 **3.1.1 Climate projections**: : The original input climate data files should first be obtained from the repository [jscohen4/orca_cmip5_inputs](https://github.com/jscohen4/orca_cmip5_inputs) and the directory `input_climate_files` put in the directory `orca/data`. To process data, run `baseline-cc-parallel.py` remotely on 97 processors or `baseline-cc.py` on 1 processor. To ensure that climate data is processed to be input to ORCA, ensure that `calc_indices = True` and `climate_forecasts = True` in these scripts. 
 
 
-**3.1.2 Water demand and land use projections**: demand
+**3.1.2 Water demand and land use projections**: Please contact author to obtain original demand files that should be present in `orca/data/demand_files` as they are too large for this repository. Original demand data is also publically available from (USGS FORE-SCE)[https://www.sciencebase.gov/catalog/item/5b96c2f9e4b0702d0e826f6d], (USGS LUCAS) 
 
 **3.1.3 Scenario ensemble**: `orca/data/calc.py`
 
