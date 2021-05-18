@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 import json
 def init_plotting():
   sns.set_style("darkgrid", {"axes.facecolor": "0.9"}) 
-  # plt.rcParams['figure.figsize'] = (15, 8)
   plt.rcParams['figure.figsize'] = (8, 6)
   plt.rcParams['font.family'] = 'DejaVu Sans'
   plt.rcParams['font.weight'] = 'bold'
@@ -65,7 +64,6 @@ ax0.barh(range(16), values, align='center', color='xkcd:metallic blue',alpha = 0
 new_keys = [r'$Q_A \mu_{20} \Delta_5$', r'$Q_{3d}P_{90\%}Y_{20}$', r'$Q_{3M} P_{30\%}Y_{20}$',r'$Q_{3d} P_{90\%}Y_{30}$',r'$Q_{3M} P_{30\%}Y_{30}$', \
 						r'$T_{70\%} \mu_{30}$',r'$Q_{1d} P_{50\%}Y_{20}$', r'$Q_A \mu_{30}$',r'$SWE \mu_{30}$', r'$T_{70\%} \mu_{20}$', \
 						r'$D\mu_{20}$', r'$SWE \mu_{10}$', r'$T_{90\%} \sigma_{20}$',r'$Q_{1M} P_{50\%}Y_{30}$', r'$T_{70\%} \mu_{10}$',r'$Q_{3M} P_{30\%}Y_{50}$']#,r'$d_3 P_{50}Y_{50}$', r'$T_{70} \mu_{10}$', r'$d_3 P_{50}Y_{30}$', r'$T_{50} \mu_{50}$',\
-						#r'$D\mu_{10}$', r'$T_{50} \mu_{30}$']
 ax0.set_yticks(range(16))
 ax0.set_yticklabels(new_keys[::-1])
 ax0.set_title('(a) Robust policies', weight = 'bold',loc = 'left')

@@ -9,8 +9,6 @@ from SALib.analyze import delta
 from SALib.util import read_param_file
 
 def init_plotting():
-  # sns.set_style("darkgrid", {"axes.facecolor": "0.9"}) 
-  # plt.rcParams['figure.figsize'] = (15, 8)
   plt.rcParams['figure.figsize'] = (6, 3.75)
   plt.rcParams['font.family'] = 'DejaVu Sans'
   plt.rcParams['font.weight'] = 'bold'

@@ -28,7 +28,6 @@ init_plotting()
 fig,((ax0,ax1),(ax2,ax3)) = plt.subplots(2,2,sharex = True)
 
 dfcount = pd.read_csv('../misc-files/Levee_distributionsexpansion.csv', index_col = 0)
-# dfcount['Levee1'] = dfcount['Levee1']*2
 Levee_count = {}
 
 
@@ -113,13 +112,7 @@ for i,action_count in enumerate(dfcount['Sites3'].values):
 		Offstream3_count.append(year-2)
 Offstream_count['Offstream 3'] = Offstream3_count
 Offstream3_adj  = Offstream_count['Offstream 3']
-# Offstream3_adj = Offstream_count
 sns.histplot(Offstream_count,ax = ax1, bins = 16,element="poly",fill = True, alpha = 0.15)
-# sns.kdeplot(Offstream_count['Offstream 1'])
-# sns.kdeplot(Offstream_count['Offstream 2'])
-# sns.kdeplot(Offstream_count['Offstream 3'])
-# for key in Levee_count:
-	# sns.histplot(Levee_count[key],bins = 8)
 
 ##########Demand
 dfcount = pd.read_csv('../misc-files/demand_distributions.csv', index_col = 0)
@@ -180,8 +173,6 @@ for i,action_count in enumerate(dfcount['OpPolB'].values):
 OpPol_count['Hedging B'] = OpPolB_count
 
 sns.histplot(OpPol_count,ax = ax3,bins =16,element="poly",fill = True, alpha = 0.15)
-# for key in Levee_count:
-	# sns.histplot(Levee_count[key],bins = 8)
 ax0.set_title('(a) Levee', weight = 'bold')
 ax1.set_title('(b) Offstream storage', weight = 'bold')
 ax2.set_title('(c) Demand', weight = 'bold')
@@ -193,11 +184,7 @@ ax0.set_ylabel('Count',weight = 'bold')
 ax1.set_ylabel('Count',weight = 'bold')
 ax2.set_ylabel('Count',weight = 'bold')
 ax3.set_ylabel('Count',weight = 'bold')
-# ax0.set_xticks(np.arange(2020,2100,10))
-# plt.setp(ax0.get_xticklabels(), Rotation=35) 
-# plt.setp(ax1.get_xticklabels(), Rotation=35) 
-# plt.setp(ax2.get_xticklabels(), Rotation=35) 
-# plt.setp(ax3.get_xticklabels(), Rotation=35) 
+
 ax0.xaxis.set_tick_params(labelbottom=True)
 ax1.xaxis.set_tick_params(labelbottom=True)
 

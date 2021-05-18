@@ -24,7 +24,6 @@ def init_plotting():
   plt.rcParams['ytick.labelsize'] = 0.9*plt.rcParams['font.size']
 init_plotting()
 fig, ((ax0,ax1),(ax2,ax3)) = plt.subplots(2,2)
-# fig = plt.figure(constrained_layout=True)
 widths = [1,1]
 heights = [1,0.25]
 spec = gridspec.GridSpec(ncols=2, nrows=2, width_ratios = widths, height_ratios =heights)
@@ -52,10 +51,8 @@ for seed in range(10):
   snapshots = pickle.load(open('../snapshots/training_scenarios_seed_%s.pkl'%seed, 'rb'))
   robust_policies = policy_adjust['%s'%seed]
   for i in robust_policies:
-    # print(str(f))
     P = snapshots['best_P'][-1][i]
     f = snapshots['best_f'][-1][i]
-    # if f[3] <1.48e9:
     for node in P.L:
         if not node.is_feature:
             a = '%s' % node.value
@@ -119,10 +116,8 @@ for seed in range(10):
   robust_policies = policy_adjust['%s'%seed]
   for i in robust_policies:
     if i not in robust_policy_adjust['%s'%seed]:
-      # print(str(f))
       P = snapshots['best_P'][-1][i]
       f = snapshots['best_f'][-1][i]
-      # if f[3] <1.48e9:
       for node in P.L:
           if not node.is_feature:
               a = '%s' % node.value

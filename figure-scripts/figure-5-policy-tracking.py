@@ -89,37 +89,24 @@ ax1.set_ylim([28, 55])
 ax2.plot(x_total,dfind.I26.values, color = 'k')
 ax2.plot([2020,2100],[693,693],color = 'k', ls = '--')
 ax2.set_ylabel('TAF')
-# ax2.set_ylabel(r'$\mathbf{M_3 P_{30} Y_{30}}$'))
 ax2.set_title(r'(c) $\mathbf{Q_{3M} P_{30\%} Y_{30}}$', loc = 'left', weight = 'bold')
 
 ax3.plot(x_total,dfind.I59.values, color = 'k')
 ax3.plot([2020,2100],[121,121],color = 'k', ls = '--')
 ax3.set_ylabel('% historical')
-# ax3.set_ylabel(r'$\mathbf{D\mu_{5}}$')
 ax3.set_title(r'(d) $\mathbf{D\mu_{5}}$', loc = 'left', weight = 'bold')
 
 ax4.plot(x_total,dfind.I57.values, color = 'k')
 ax4.plot([2020,2100],[22,22],color = 'k', ls = '--')
 ax4.set_ylabel('Inches')
-# ax4.set_ylabel(r'$\mathbf{SWE_{\bf{max}} \mu_{30}}$')
 ax4.set_title(r'(e) $\mathbf{SWE \mu_{30}}$', loc = 'left', weight = 'bold')
 
 ax5.plot(x_total,dfind.I44.values, color = 'k')
 ax5.plot([2020,2100],[167,167],color = 'k', ls = '--')
 ax5.set_ylabel('DOWY')
-# ax5.set_ylabel(r'$\mathbf{T_{70} \mu_{30}}$'))
 ax5.set_title(r'(f) $\mathbf{T_{70\%} \mu_{30}}$', loc = 'left', weight = 'bold')
 
 
-# dfind.I61.plot(ax = ax4,label = 'demand_mu_roll20')
-# dfind.I33.plot(ax = ax1,label = 'fnf_3D_pct90_yrs20')
-# # dfind.I26.plot(ax = ax0, label = 'fnf_3M_pct30_yrs30')
-# dfind.I59.plot(ax = ax4,label = 'demand_mu_roll5')
-# dfind.I44.plot(ax = ax2,label='fnf_tim70_mu_roll30')
-# dfind.I57.plot(ax = ax3,label = 'swe_AN_max_mu_roll30')
-# policy_section =None
-# 
-# if policy_section == 0:
 numyears = 5
 signal = dfind.I61.values[0:numyears]
 time = np.arange(2020,2020 +numyears)
@@ -130,7 +117,6 @@ ax0.fill_between(time,signal,thresh)
 ax0.plot([start,start],[thresh,95],color = colors[5],lw = 3, ls = '--')
 
 
-# elif policy_section == 1:
 numyearspass = 5
 numyears = 22
 signal = dfind.I61.values[numyearspass:(numyearspass+numyears)]
@@ -157,7 +143,6 @@ ax3.plot([start,start],[thresh,signal_init],color = colors[0], ls = '--', lw = 3
 
 
 
-# elif policy_section == 2:
 numyearspass = 27
 start = 2020+numyearspass
 numyears = 12
@@ -180,11 +165,9 @@ signal = dfind.I59.values[numyearspass:(numyearspass+numyears)]
 time = np.arange(2020+numyearspass,2020+numyearspass+numyears)
 thresh = 121
 ax3.fill_between(time,signal,thresh,color = colors[1])
-# ax3.plot([start,start],[thresh,ax3.get_ylim()[1]],color = colors[3])
 
 
 
-# elif policy_section == 3:
 numyearspass = 38
 numyears =10
 signal = dfind.I61.values[numyearspass:(numyearspass+numyears)]
@@ -201,7 +184,6 @@ ax1.fill_between(time,signal*AF_MCF,thresh,color = colors[2])
 signal = dfind.I26.values[numyearspass:(numyearspass+numyears)]
 thresh = 693
 ax2.fill_between(time,signal,thresh,color = colors[2])
-# ax2.plot([start,start],[thresh,ax2.get_ylim()[0]],color = colors[2])
 
 signal = dfind.I57.values[numyearspass:(numyearspass+numyears)]
 thresh = 22
@@ -209,7 +191,6 @@ ax4.fill_between(time,signal,thresh,color = colors[2])
 
 
 
-# elif policy_section == 4:
 numyearspass = 47
 numyears =26
 signal = dfind.I61.values[numyearspass:(numyearspass+numyears)]
@@ -235,7 +216,6 @@ thresh = 22
 
 ax4.plot([start,start],[thresh,10],color = colors[4], lw = 3, ls = '--')
 
-# elif policy_section == 5:
 numyearspass = 72
 numyears =9
 signal = dfind.I61.values[numyearspass:(numyearspass+numyears)]
@@ -248,7 +228,6 @@ ax0.plot([start,start],[thresh,signal_init],color = colors[3], lw = 3, ls = '--'
 signal = dfind.I33.values[numyearspass:(numyearspass+numyears)]
 signal_init = dfind.I33.values[numyearspass]
 thresh = 519*AF_MCF
-print(thresh)
 ax1.plot([start,start],[thresh,55],color = colors[3], lw = 3, ls = '--')
 
 signal = dfind.I44.values[numyearspass:(numyearspass+numyears)]

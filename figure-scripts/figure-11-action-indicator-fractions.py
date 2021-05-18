@@ -24,8 +24,6 @@ init_plotting()
 fig,((ax0,ax1),(ax2,ax3)) = plt.subplots(2,2)
 action_dict = json.load(open('../orca/data/json_files/action_list.json'))
 action_names = action_dict['actions']
-# action_names.append('Demand_60')
-# action_names.append('Demand_50')
 robust_policy_adjust = json.load(open('../misc-files/nondom-tracker/seed_policy_adjust_robust.json'))
 
 features = json.load(open('../orca/data/json_files/indicators_rel_bounds.json'))

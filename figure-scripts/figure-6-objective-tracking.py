@@ -70,7 +70,6 @@ results_AN_cum_baseline['carryover'] = results_AN_cum_baseline.carryover.cumsum(
 
 
 ############results
-# results = pd.read_csv('OpPol-results.csv',index_col = 0, parse_dates = True)
 results = pd.read_csv('../misc-files/policy-tracker-sctest-11.csv',index_col = 0, parse_dates = True)
 results = results.shift(periods=1, freq='AS-OCT')
 results['build_cost'].loc['2066-10-01'] = 966.980524/365
@@ -103,9 +102,6 @@ results_AN_cum.cum_reliability.loc['10/01/2019':'10/01/2035'] = results_AN_cum_b
 
 results.spill = results.SHA_spill+results.ORO_spill + results.FOL_spill
 results.spill.loc['10/01/2029':'10/01/2095'] = results.spill.loc['10/01/2029':'10/01/2095']* 0.65
-# results.spill.loc['10/01/2095':'10/01/2099'] = results.spill.loc['10/01/2095':'10/01/2099']* 0.4
-
-# results.spill.loc['10/01/2029':'10/01/2097'] = results.spill.loc['10/01/2029':'10/01/2097']* 0.65
 
 results_AN_last = results.resample('AS-OCT').last()
 
@@ -153,7 +149,6 @@ ax4.plot(action_tracking.policy, color = 'steelblue')
 ax5.plot(action_tracking.noaction,color = 'indianred')
 ax5.plot(action_tracking.policy, color = 'steelblue')
 ax4.set_title('(e) Actions',weight = 'bold')
-# ax5.set_title('Actions',weight = 'bold')
 
 ax0.set_xticks(dates)
 ax1.set_xticks(dates)
