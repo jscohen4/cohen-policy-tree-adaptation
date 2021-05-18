@@ -40,7 +40,7 @@ The following instrutctions correspond to subsections in **Section 3 Methods**, 
 
 **3.2.3 Multi-objective optimization**:`optimization.py` performs the policy search over the 235 testing scenarios. Optimized policies and objective values are stored as pickle files in the `snapshots` directory. If running the script in parallel, set `parallel = True` on line 112. The number of processors used for this optimization must be equal to `population_size` (line 109 in `optimization.py`) multiplied by the length of `sc_split` (line 100). If only running on one processor, set `pararallel = False`.
  
-**3.3.1 Robusness testing**: `testing-outofsample.py` and `robustness-calculation.py`. Figure 3 script
+**3.3.1 Robusness testing**: To test optimized policies, run `testing-outofsample.py` in parallel. Output files containing performance metrics over testing scenarios will be generated in the `testing_outputs` folder. Next run `robustness-calculation.py`. This will calculate robustness scores for each policy, and perform a pareto sort. A list of non-dominated robust policies are stored in `misc-files/robust_scores_ordered.pkl` and their corresponding robustness scores in `misc-files/f_robust_ordered.pkl`.
 
 **3.3.2 Policy dynamics**: figure 4, 5 and 6 scripts
 
