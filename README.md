@@ -48,7 +48,7 @@ Simulation of this policy over testing scenario 11 is performed in `figure-scrip
 
 **3.4.1 Action occurance in robust policiess**: `figure-scripts/figure-7-action-fractions.py` calculates and plots the action occurances for both the robust and non-robust policy sets. This script subsequently generates **Figure 7**. 
 
-**3.4.2 Sensitivity to cost estimates**: Scripts to perform the sensitivity analysis are located in the `SA_files` directory. First, `SA_files/sampling.py` generated the 1000 latin hypercube samples. 
+**3.4.2 Sensitivity to cost estimates**: Scripts to perform the sensitivity analysis are located in the `SA_files` directory. To obtain cost multipliers, `SA_files/sampling.py` generates the 1000 latin hypercube samples, which are stored `SA_files/latin_samples.npy`. `SA_files/SA_simulation.py` runs the simulations for the sensitivity analysis, using `orca/model_SA.py` with the sampled cost multipliers. `SA_files/SA-pareto-sort.py` then performs a pareto sort of the updated performance metrics from each simulation. It also calculated the robustness score for each policy under each combination of cost mulitpliers, then finding the robust set. `SA_files/SA-action-fractions.py` calculates the action occurances for each of these robust sets. `SA_files/SA_delta.py` can then calculate the delta sensitivity index for each comination of action group and cost multiplier. Finally, `figure-scripts/figure-8-SA_delta.py` generates **Figure 8**. 
 
 **3.4.3 Action timing**: action hits and figure 8
 
