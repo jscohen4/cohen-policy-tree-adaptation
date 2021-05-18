@@ -17,4 +17,4 @@ problem = {
 }
 
 param_values = latin.sample(problem, 10)
-np.save('latin_samples_2.npy', param_values)
+np.save('latin_samples.npy', param_values)
