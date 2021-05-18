@@ -36,7 +36,7 @@ The following instrutctions correspond to subsections in **Section 3 Methods**, 
 
 **3.2.1 Indicators**: Indicators are calculated from climate projections, demand data, and randomly generated discount rates in `orca/data/calc_indicators.py`. To ensure indicators are correctly processed for simulation or optimization, run one of the baseline scripts with  `calc_indices = True` set. 
 
-**3.2.2 Actions**: various scripts
+**3.2.2 Actions**: There are several addtions to the original [ORCA](https://github.com/jscohen4/orca) model that represent the proposed actions in this study. Each action is initially triggered in `orca/model.py`. Simulation of levee expansions, groundwater use, dam/reservoir expansion, and operating policy changes are implemented in `orca/reservoir.py`. Demand curtailments are implemented in `orca/delta.py`. A new script `orca/offstream.py` has been added to simulate the offstream storage action. 
 
 **3.2.3 Multi-objective optimization**:`optimization.py` performs the policy search over the 235 testing scenarios. Optimized policies and objective values are stored as pickle files in the `snapshots` directory. If running the script in parallel, set `parallel = True` on line 112. The number of processors used for this optimization must be equal to `population_size` (line 109 in `optimization.py`) multiplied by the length of `sc_split` (line 100). If only running on one processor, set `pararallel = False`.
  
