@@ -4,7 +4,7 @@ This repository contains all code corresponding to methods and figure generation
 
 Cohen, J.S. & Herman, J.D., Dynamic adaptation of water resources systems under uncertainty using policy tree optimization (submitted manuscript).
 
-This work is is build off and couples two existing repositories: [ORCA](https://github.com/jscohen4/orca) and [policy tree optimization](https://github.com/jdherman/ptreeopt). 
+This work is is an extension of two existing repositories: [ORCA](https://github.com/jscohen4/orca) and [policy tree optimization](https://github.com/jdherman/ptreeopt). 
 
 ## Requirements:
 [NumPy](http://www.numpy.org/), [Pandas](http://pandas.pydata.org/), [Matplotlib](http://matplotlib.org/), [Scipy](http://www.scipy.org/), [Scikit-learn](http://scikit-learn.org/), [SALIB](https://github.com/SALib/SALib), [Seaborn](https://seaborn.pydata.org/), [MPI for Python](https://mpi4py.readthedocs.io/en/stable/) (optional), [PyGraphviz](https://pygraphviz.github.io/) (optional).
@@ -12,7 +12,7 @@ This work is is build off and couples two existing repositories: [ORCA](https://
 ## Directories:
 `orca`: Contains code and input data for the simulation more used in this study: Operations of Reservoirs in California. The model is briefly described in **2.2 Model**. For further infocmation on ORCA see the [original ORCA repository](https://github.com/jscohen4/orca) and [Cohen et. al., 2020](https://doi.org/10.1061/(ASCE)WR.1943-5452.0001300).
 
-`ptreeopt`: Contains code for multi-objective policy tree optimization, described in **3.2.3 Multi-objective optimization**. For further details see the [original policy tree optimization repository](https://github.com/jdherman/ptreeopt) and [Herman and Giuliani, 2018](https://doi.org/10.1016/j.envsoft.2017.09.016).
+`ptreeopt`: Contains code for multi-objective policy tree optimization, described in **3.2.3 Multi-objective optimization**. The repository has been extended to run more efficiently in parallel, via lines 144-150 in `ptreeopt/opt.py`. For further details see the [original policy tree optimization repository](https://github.com/jdherman/ptreeopt) and [Herman and Giuliani, 2018](https://doi.org/10.1016/j.envsoft.2017.09.016).
 
 `misc-files`: Directory containing several data files required for running several python scripts to generate results and figures.
 
