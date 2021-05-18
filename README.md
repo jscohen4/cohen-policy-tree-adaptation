@@ -42,7 +42,9 @@ The following instrutctions correspond to subsections in **Section 3 Methods**, 
  
 **3.3.1 Robusness testing**: To test optimized policies, run `testing-outofsample.py` in parallel. Output files containing performance metrics over testing scenarios will be generated in the `testing_outputs` folder. Next run `robustness-calculation.py`. This will calculate robustness scores for each policy, and perform a pareto sort. A list of non-dominated robust policies are stored in `misc-files/robust_scores_ordered.pkl` and their corresponding robustness scores in `misc-files/f_robust_ordered.pkl`.
 
-**3.3.2 Policy dynamics**: figure 4, 5 and 6 scripts
+**3.3.2 Policy dynamics**: The policy tree analyzed in tree number 98 from random seed 4. A vizualization of this tree is generated in `figure-scripts/figure-3-plot-tree.py`. This vizualization is the original version of **Figure 3**, which was later edited in a graphics editor for better interpretation. 
+
+Simulation of this policy over testing scenario 11 is performed in `figure-scripts/figure-5-policy-tracking.py`. This script also plots the indicator time series and action triggers in **Figure 5**. The script also generates a time series of objectives over time for this simulations. This is output as `misc-files/policy-tracker-sctest-11.csv`. `figure-scripts/figure-6-objective-tracking.py` can then be used to plot these objective time series, generating **Figure 6**.
 
 **3.4.1 Action occurance in robust policiess**: figure 7 scripts
 
