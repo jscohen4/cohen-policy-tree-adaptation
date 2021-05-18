@@ -4,6 +4,8 @@ This repository contains all code corresponding to methods and figure generation
 
 Cohen, J.S. & Herman, J.D., Dynamic adaptation of water resources systems under uncertainty using policy tree optimization (submitted manuscript).
 
+[![DOI](https://zenodo.org/badge/367167809.svg)](https://zenodo.org/badge/latestdoi/367167809)
+
 This work is is an extension of two existing repositories: [ORCA](https://github.com/jscohen4/orca) and [policy tree optimization](https://github.com/jdherman/ptreeopt). 
 
 ## Requirements:
