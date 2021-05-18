@@ -10,9 +10,9 @@ This work is is an extension of two existing repositories: [ORCA](https://github
 [NumPy](http://www.numpy.org/), [Pandas](http://pandas.pydata.org/), [Matplotlib](http://matplotlib.org/), [Scipy](http://www.scipy.org/), [Scikit-learn](http://scikit-learn.org/), [SALIB](https://github.com/SALib/SALib), [Seaborn](https://seaborn.pydata.org/), [MPI for Python](https://mpi4py.readthedocs.io/en/stable/) (optional), [PyGraphviz](https://pygraphviz.github.io/) (optional).
 
 ## Directories:
-`orca`: Contains code and input data for the simulation more used in this study: Operations of Reservoirs in California. The model is briefly described in **2.2 Model**. For further infocmation on ORCA see the [original ORCA repository](https://github.com/jscohen4/orca) and [Cohen et. al., 2020](https://doi.org/10.1061/(ASCE)WR.1943-5452.0001300).
+`orca`: Contains code and input data for the simulation more used in this study: Operations of Reservoirs in California. The model is briefly described in **2.2 Model**. For further infocmation on ORCA see the [original ORCA repository](https://github.com/jscohen4/orca) and [Cohen et. al., 2020](https://doi.org/10.1061/(ASCE)WR.1943-5452.0001300). Additions to the original model for this study are described in **Paper methods and figures** in this README file.
 
-`ptreeopt`: Contains code for multi-objective policy tree optimization, described in **3.2.3 Multi-objective optimization**. The repository has been extended to run more efficiently in parallel, via lines 144-150 in `ptreeopt/opt.py`. For further details see the [original policy tree optimization repository](https://github.com/jdherman/ptreeopt) and [Herman and Giuliani, 2018](https://doi.org/10.1016/j.envsoft.2017.09.016).
+`ptreeopt`: Contains code for multi-objective policy tree optimization, described in **3.2.3 Multi-objective optimization**. For further details see the [original policy tree optimization repository](https://github.com/jdherman/ptreeopt) and [Herman and Giuliani, 2018](https://doi.org/10.1016/j.envsoft.2017.09.016). The repository has been extended to run more efficiently in parallel, via lines 144-150 in `ptreeopt/opt.py`. 
 
 `misc-files`: Directory containing several data files required for running several python scripts to generate results and figures.
 
@@ -33,7 +33,6 @@ The following instrutctions correspond to subsections in **Section 3 Methods**, 
 [DOE GCAM CONUS](https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=1216). 
 
 **3.1.3 Scenario ensemble**: The full scenarios necessary for baseline simulations and policy-tree optimization runs can be obtained by running one of the two baseline scripts with the following options set: `calc_indices = True`, `climate_forecasts = True`, `tree_input_files = True`, `indicator_data_file = True`. Setting `simulation = True` will also run the baseline simulations. 
-
 
 **3.2.1 Indicators**: Indicators are calculated from climate projections, demand data, and randomly generated discount rates in `orca/data/calc_indicators.py`. To ensure indicators are correctly processed for simulation or optimization, run one of the baseline scripts with  `calc_indices = True` set. 
 
