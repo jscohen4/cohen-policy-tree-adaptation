@@ -23,7 +23,7 @@ This work is is an extension of two existing repositories: [ORCA](https://github
 `figure-scripts`: Directory containing python scripts to generate **Figures 3-11**.
 
 
-## Paper methods and figures:
+## Paper methods, results,  and figures:
 The following instrutctions correspond to subsections in **Section 3 Methods**, and their corrsponding subsections in **Section 4 Results and discussion**.
 
 **3.1.1 Climate projections**: : The original input climate data files should first be obtained from the repository [jscohen4/orca_cmip5_inputs](https://github.com/jscohen4/orca_cmip5_inputs) and the directory `input_climate_files` put in the directory `orca/data`. To process climate data, run `baseline-cc-parallel.py` remotely on 97 processors or `baseline-cc.py` on 1 processor. To ensure that climate data is processed to be input to ORCA, ensure that `calc_indices = True` and `climate_forecasts = True` in these scripts. This will cause the sript to run `orca/data/calc_indices.py` and `orca/data/forecasting.py`. The original data for [USBR CMIP5 climate and hydrology projections](https://gdo-dcp.ucllnl.org/downscaled_cmip_projections/dcpInterface.html) are also publically available. 
@@ -51,3 +51,15 @@ The following instrutctions correspond to subsections in **Section 3 Methods**, 
 **3.4.3 Action timing**: action hits and figure 8
 
 **3.4.4 Indicator occurance in robust policies**: figure 10 and 11
+
+**4.1.1 Robustness testing and tradeoffs**:
+
+**4.1.2 Robustness policy dynamics**:
+
+**4.2 Action occurrence metrics**:
+
+**4.3 Cost sensitivity**:
+
+**4.4 Action timing**:
+
+**4.5 Indicator occurrence metrics**:
