@@ -109,6 +109,5 @@ algorithm = PTreeOpt(wrapper_opt,
 					population_size = 96, # hpc hack 7/18/17
 					max_depth = 8,multiobj = True,epsilons = [2000,0.0005,2,50000])
 
-#check espsilons after
 snapshots = algorithm.run(max_nfe = 48096, log_frequency = 96, parallel=True, filename= 'training_scenarios_seed_%s'%seed)
 pickle.dump(snapshots, open('snapshots/training_scenarios_seed_%s.pkl'%seed, 'wb'))
