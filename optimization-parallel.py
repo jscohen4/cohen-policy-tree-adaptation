@@ -91,14 +91,12 @@ def wrapper_opt(P, first, last):
 			cost_sum += results.build_cost.sum()+ results.maintenance_cost.sum()+ results.conservation_cost.sum() + results.SHA_gw_cost.sum() + results.ORO_gw_cost.sum() + results.FOL_gw_cost.sum()
 	reliability = (SWP_demand*(1 - SWP_shortage/SWP_demand) + CVP_demand*(1 - CVP_shortage/CVP_demand) + SHA_NODD_target*(1 - SHA_NODD_shortage/SHA_NODD_target) +FOL_NODD_target*(1 - FOL_NODD_shortage/FOL_NODD_target))/(SWP_demand+CVP_demand+SHA_NODD_target+FOL_NODD_target)
 	carry_count = len(np.where(carry_arr < 5000)[0])
-	# shortage_arr = shortage_arr[~np.isnan(shortage_arr)]
 	if cost_sum < 0: 
 		cost_sum = 0
 	if flood_sum >= 2e9:
 		penalty += 10**18
 	return [cost_sum + penalty, -reliability + penalty, carry_count + penalty, flood_sum + penalty]
-# scsplit = np.arange(0,99,2)
-# scsplit[49] = 97
+	
 scsplit = [0,50]
 algorithm = PTreeOpt(wrapper_opt, 	
 					scsplit = scsplit,
