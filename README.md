@@ -38,7 +38,7 @@ The following instrutctions correspond to subsections in **Section 3 Methods**, 
 
 **3.2.2 Actions**: various scripts
 
-**3.2.3 Multi-objective optimization**:`optimization-parallel.py` performs the policy search over the 235 testing scenarios. Optimized policies and objective values are stored as pickle files in the `snapshots` directory. The number of processors used for this optimization must be equal to the population size (line 111 in )
+**3.2.3 Multi-objective optimization**:`optimization-parallel.py` performs the policy search over the 235 testing scenarios. Optimized policies and objective values are stored as pickle files in the `snapshots` directory. The number of processors used for this optimization must be equal to `population_size` (line 109 in `optimization parallel`) times the length of `sc_split` (line 100).
  
 **3.3.1 Robusness testing**: `testing-outofsample.py` and `robustness-calculation.py`. Figure 3 script
 
