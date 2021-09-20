@@ -29,11 +29,11 @@ AF_MCF = 86400 / 1000**2
 
 #need climate data folders for this, which are too large for github (a few are presevnt in repository for example)
 dfh =pd.read_csv('orca/data/historical_runs_data/results.csv', index_col = 0, parse_dates = True)
-SHA_baseline = pd.read_csv('../orca/data/baseline_storage/SHA_storage.csv',parse_dates = True, index_col = 0)
+SHA_baseline = pd.read_csv('orca/data/baseline_storage/SHA_storage.csv',parse_dates = True, index_col = 0)
 SHA_baseline = SHA_baseline[(SHA_baseline.index >= '2019-09-30') & (SHA_baseline.index <= '2099-10-01')]
-ORO_baseline = pd.read_csv('../orca/data/baseline_storage/ORO_storage.csv',parse_dates = True, index_col = 0)
+ORO_baseline = pd.read_csv('orca/data/baseline_storage/ORO_storage.csv',parse_dates = True, index_col = 0)
 ORO_baseline = ORO_baseline[(ORO_baseline.index >= '2019-09-30') & (ORO_baseline.index <= '2099-10-01')]
-FOL_baseline = pd.read_csv('../orca/data/baseline_storage/FOL_storage.csv',parse_dates = True, index_col = 0)
+FOL_baseline = pd.read_csv('orca/data/baseline_storage/FOL_storage.csv',parse_dates = True, index_col = 0)
 FOL_baseline = FOL_baseline[(FOL_baseline.index >= '2019-09-30') & (FOL_baseline.index <= '2099-10-01')]
 
 baseline = pd.read_csv('orca/data/climate_results/maintenance_cost.csv',parse_dates = True, index_col = 0)
@@ -246,5 +246,5 @@ ax3.set_xlabel('')
 ax4.set_xlabel('')
 
 plt.tight_layout()
-plt.savefig('figures/Figure-6.pdf')
+# plt.savefig('figures/Figure-5.pdf')
 plt.show()
