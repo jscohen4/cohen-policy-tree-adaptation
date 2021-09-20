@@ -22,11 +22,11 @@ def init_plotting():
   plt.rcParams['ytick.labelsize'] = 0.9*plt.rcParams['font.size']
 init_plotting()
 fig,((ax0,ax1),(ax2,ax3)) = plt.subplots(2,2)
-action_dict = json.load(open('../orca/data/json_files/action_list.json'))
+action_dict = json.load(open('orca/data/json_files/action_list.json'))
 action_names = action_dict['actions']
-robust_policy_adjust = json.load(open('../misc-files/nondom-tracker/seed_policy_adjust_robust.json'))
+robust_policy_adjust = json.load(open('misc-files/nondom-tracker/seed_policy_adjust_robust.json'))
 
-features = json.load(open('../orca/data/json_files/indicators_rel_bounds.json'))
+features = json.load(open('orca/data/json_files/indicators_rel_bounds.json'))
 feature_names = []
 for k,v in features.items():
 	feature_names.append(v['name'])
@@ -39,7 +39,7 @@ for a in action_names:
 
 for seed in range(10):
 	robust_policies = robust_policy_adjust['%s'%seed]
-	snapshots = pickle.load(open('../snapshots/training_scenarios_seed_%s.pkl'%seed, 'rb'))
+	snapshots = pickle.load(open('snapshots/training_scenarios_seed_%s.pkl'%seed, 'rb'))
 	policies = snapshots['best_P'][-1]
 
 	num_sol = len(policies)

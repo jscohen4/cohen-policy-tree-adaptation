@@ -31,11 +31,11 @@ problem = {
   'bounds': [[0.25, 1.75]]*5
 }
 
-action_dict = json.load(open('../orca/data/json_files/action_list.json'))
+action_dict = json.load(open('orca/data/json_files/action_list.json'))
 action_names = action_dict['actions']
 action_names_combined = ['Levee', 'Dam', 'Offstream', 'Demand', 'GW', 'OpPol', 'Standard']
-SA_input = np.load('../SA_files/latin_samples.npy')
-SA_output = np.load('../SA_files/SA_output.npy')
+SA_input = np.load('SA_files/latin_samples.npy')
+SA_output = np.load('SA_files/SA_output.npy')
 Si_arr = np.zeros([7,5])
 for i in range(0,7):
   Si = delta.analyze(problem, SA_input, SA_output[:,i], num_resamples=10, conf_level=0.95, print_to_console=False)

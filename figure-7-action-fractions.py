@@ -31,10 +31,10 @@ ax0 = fig.add_subplot(spec[0, 0])
 ax1 = fig.add_subplot(spec[0, 1])
 ax2 = fig.add_subplot(spec[1, 0])
 ax3 = fig.add_subplot(spec[1, 1])
-action_dict = json.load(open('../orca/data/json_files/action_list.json'))
+action_dict = json.load(open('orca/data/json_files/action_list.json'))
 action_names = action_dict['actions']
-robust_policy_adjust = json.load(open('../misc-files/nondom-tracker/seed_policy_adjust_robust.json'))
-policy_adjust = json.load(open('../misc-files/nondom-tracker/seed_policy_adjust.json'))
+robust_policy_adjust = json.load(open('misc-files/nondom-tracker/seed_policy_adjust_robust.json'))
+policy_adjust = json.load(open('misc-files/nondom-tracker/seed_policy_adjust.json'))
 
 #########################################robust policies#################################################
 #########################################################################################################
@@ -48,7 +48,7 @@ total = 0
 for f in action_names:
   counts[f] = 0
 for seed in range(10):
-  snapshots = pickle.load(open('../snapshots/training_scenarios_seed_%s.pkl'%seed, 'rb'))
+  snapshots = pickle.load(open('snapshots/training_scenarios_seed_%s.pkl'%seed, 'rb'))
   robust_policies = policy_adjust['%s'%seed]
   for i in robust_policies:
     P = snapshots['best_P'][-1][i]
@@ -112,7 +112,7 @@ total = 0
 for f in action_names:
   counts[f] = 0
 for seed in range(10):
-  snapshots = pickle.load(open('../snapshots/training_scenarios_seed_%s.pkl'%seed, 'rb'))
+  snapshots = pickle.load(open('snapshots/training_scenarios_seed_%s.pkl'%seed, 'rb'))
   robust_policies = policy_adjust['%s'%seed]
   for i in robust_policies:
     if i not in robust_policy_adjust['%s'%seed]:

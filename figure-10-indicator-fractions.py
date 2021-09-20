@@ -22,14 +22,14 @@ def init_plotting():
   plt.rcParams['ytick.labelsize'] = 0.9*plt.rcParams['font.size']
 init_plotting()
 fig, (ax0,ax1) = plt.subplots(1,2)
-features = json.load(open('../orca/data/json_files/indicators_rel_bounds.json'))
+features = json.load(open('orca/data/json_files/indicators_rel_bounds.json'))
 feature_names = []
 feature_bounds = []
 for k,v in features.items():
 	feature_names.append(v['name'])
 	feature_bounds.append(v['bounds'])
-robust_policy_adjust = json.load(open('../misc-files/nondom-tracker/seed_policy_adjust_robust.json'))
-policy_adjust = json.load(open('../misc-files/nondom-tracker/seed_policy_adjust.json'))
+robust_policy_adjust = json.load(open('misc-files/nondom-tracker/seed_policy_adjust_robust.json'))
+policy_adjust = json.load(open('misc-files/nondom-tracker/seed_policy_adjust.json'))
 
 #########################################robust policies#################################################
 #########################################################################################################
@@ -44,7 +44,7 @@ for f in feature_names:
 	counts[f] = 0
 for seed in range(10):
 
-	snapshots = pickle.load(open('../snapshots/training_scenarios_seed_%s.pkl'%seed, 'rb'))
+	snapshots = pickle.load(open('snapshots/training_scenarios_seed_%s.pkl'%seed, 'rb'))
 	robust_policies = policy_adjust['%s'%seed]
 	for i in robust_policies:
 		P = snapshots['best_P'][-1][i]

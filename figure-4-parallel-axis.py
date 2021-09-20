@@ -29,15 +29,15 @@ def init_plotting():
   plt.rcParams['ytick.labelsize'] = 1*plt.rcParams['font.size']
 init_plotting()
 
-colors = pickle.load(open("../misc-files/parallel-axis-color-order.pkl", "rb" )) 
-f_robust = pickle.load(open("../misc-files/f_robust.pkl", "rb" )) 
-f_robust_ordered = pickle.load(open("../misc-files/f_robust_ordered.pkl", "rb" )) 
+colors = pickle.load(open("misc-files/parallel-axis-color-order.pkl", "rb" )) 
+f_robust = pickle.load(open("misc-files/f_robust.pkl", "rb" )) 
+f_robust_ordered = pickle.load(open("misc-files/f_robust_ordered.pkl", "rb" )) 
 print(len(f_robust_ordered))
-robust_scores_ordered = pickle.load(open("../misc-files/robust_scores_ordered.pkl", "rb" )) 
+robust_scores_ordered = pickle.load(open("misc-files/robust_scores_ordered.pkl", "rb" )) 
 fig,ax0 = plt.subplots(1,1)
 print(min(f_robust[:,1]))
 print(max(f_robust[:,1]))
-baseline_ind = np.load('../misc-files/training_baseline_obj.npy')
+baseline_ind = np.load('misc-files/training_baseline_obj.npy')
 baseline_ind[1] =-baseline_ind[1]*0.9
 baseline_ind[2] =baseline_ind[2]*1.08
 

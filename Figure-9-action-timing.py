@@ -27,7 +27,7 @@ init_plotting()
 ###############levee
 fig,((ax0,ax1),(ax2,ax3)) = plt.subplots(2,2,sharex = True)
 
-dfcount = pd.read_csv('../misc-files/Levee_distributions_final.csv', index_col = 0)
+dfcount = pd.read_csv('misc-files/Levee_distributions_final.csv', index_col = 0)
 Levee_count = {}
 
 
@@ -69,10 +69,10 @@ for i,action_count in enumerate(dfcount['Levee5'].values):
 	for j in range(0,int(action_count)):
 		levee5_count.append(year-2)
 Levee_count['Levee 5'] = levee5_count
-sns.histplot(Levee_count,ax = ax0, bins =16,legend=True,element="poly",fill = True, alpha = 0.15)
+sns.histplot(Levee_count,ax = ax0, bins =16,legend=True,element="step",fill = False, alpha = 0.15)
 
 ################offstream
-dfcount = pd.read_csv('../misc-files/Offstream_distributions_final.csv', index_col = 0)
+dfcount = pd.read_csv('misc-files/Offstream_distributions_final.csv', index_col = 0)
 Offstream_count = {}
 
 Offstream1_count = []
@@ -94,12 +94,10 @@ for i,action_count in enumerate(dfcount['Sites3'].values):
 	year = i+2020
 	for j in range(0,int(action_count)):
 		Offstream3_count.append(year-2)
-Offstream_count['Offstream 3'] = Offstream3_count
-Offstream3_adj  = Offstream_count['Offstream 3']
-sns.histplot(Offstream_count,ax = ax1, bins = 16,element="poly",fill = True, alpha = 0.15)
+sns.histplot(Offstream_count,ax = ax1, bins = 16,element="step",fill = False, alpha = 0.15)
 
 ##########Demand
-dfcount = pd.read_csv('../misc-files/demand_distributions_final.csv', index_col = 0)
+dfcount = pd.read_csv('misc-files/demand_distributions_final.csv', index_col = 0)
 Demand_count = {}
 
 Demand70_count = []
@@ -124,14 +122,14 @@ for i,action_count in enumerate(dfcount['Demand90'].values):
 Demand_count['Demand 90'] = Demand90_count
 
 
-sns.histplot(Demand_count,ax = ax2, bins =16,element="poly",fill = True, alpha = 0.15)
+sns.histplot(Demand_count,ax = ax2, bins =16,element="step",fill = False, alpha = 0.15)
 
 
 
 ##########oppol
 
 
-dfcount = pd.read_csv('../misc-files/OpPol_distributions_finaL.csv', index_col = 0)
+dfcount = pd.read_csv('misc-files/OpPol_distributions_finaL.csv', index_col = 0)
 OpPol_count = {}
 
 OpPolA_count = []
@@ -149,7 +147,7 @@ for i,action_count in enumerate(dfcount['OpPolB'].values):
 		OpPolB_count.append(year-2)
 OpPol_count['Hedging B'] = OpPolB_count
 
-sns.histplot(OpPol_count,ax = ax3,bins =16,element="poly",fill = True, alpha = 0.15)
+sns.histplot(OpPol_count,ax = ax3,bins =16,element="step",fill = False, alpha = 0.15)
 ax0.set_title('(a) Levee', weight = 'bold')
 ax1.set_title('(b) Offstream storage', weight = 'bold')
 ax2.set_title('(c) Demand', weight = 'bold')

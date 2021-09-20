@@ -28,7 +28,7 @@ tafd_cfs = 1000 / 86400 * 43560
 AF_MCF = 86400 / 1000**2 
 
 #need climate data folders for this, which are too large for github (a few are presevnt in repository for example)
-dfh =pd.read_csv('../orca/data/historical_runs_data/results.csv', index_col = 0, parse_dates = True)
+dfh =pd.read_csv('orca/data/historical_runs_data/results.csv', index_col = 0, parse_dates = True)
 SHA_baseline = pd.read_csv('../orca/data/baseline_storage/SHA_storage.csv',parse_dates = True, index_col = 0)
 SHA_baseline = SHA_baseline[(SHA_baseline.index >= '2019-09-30') & (SHA_baseline.index <= '2099-10-01')]
 ORO_baseline = pd.read_csv('../orca/data/baseline_storage/ORO_storage.csv',parse_dates = True, index_col = 0)
@@ -36,10 +36,10 @@ ORO_baseline = ORO_baseline[(ORO_baseline.index >= '2019-09-30') & (ORO_baseline
 FOL_baseline = pd.read_csv('../orca/data/baseline_storage/FOL_storage.csv',parse_dates = True, index_col = 0)
 FOL_baseline = FOL_baseline[(FOL_baseline.index >= '2019-09-30') & (FOL_baseline.index <= '2099-10-01')]
 
-baseline = pd.read_csv('../orca/data/climate_results/maintenance_cost.csv',parse_dates = True, index_col = 0)
+baseline = pd.read_csv('orca/data/climate_results/maintenance_cost.csv',parse_dates = True, index_col = 0)
 baseline = baseline[(baseline.index >= '2019-09-30') & (baseline.index <= '2099-10-01')]
 
-features = json.load(open('../orca/data/json_files/indicators_rel_bounds.json'))
+features = json.load(open('orca/data/json_files/indicators_rel_bounds.json'))
 feature_names = []
 feature_bounds = []
 indicator_codes = []
@@ -50,11 +50,11 @@ for k,v in features.items():
 	indicator_codes.append(k)
 	feature_names.append(v['name'])
 	feature_bounds.append(v['bounds'])
-action_dict = json.load(open('../orca/data/json_files/action_list.json'))
+action_dict = json.load(open('orca/data/json_files/action_list.json'))
 actions = action_dict['actions']
 seed = 4
 optrun = 'training_scenarios_seed_%s'%seed
-snapshots = pickle.load(open('../snapshots/%s.pkl'%optrun, 'rb'))
+snapshots = pickle.load(open('snapshots/%s.pkl'%optrun, 'rb'))
 P = snapshots['best_P'][-1]
 f = snapshots['best_f'][-1]
 L = P[98]
@@ -62,9 +62,9 @@ L = P[98]
 P = PTree(L, feature_names = feature_names)
 count = 0
 sc = testing_scenarios[11]	
-df =pd.read_csv('../orca/data/scenario_runs/%s/tree-input-%s.csv'%(sc,sc), index_col = 0, parse_dates = True)#, engine = 'python')
+df =pd.read_csv('orca/data/scenario_runs/%s/tree-input-%s.csv'%(sc,sc), index_col = 0, parse_dates = True)#, engine = 'python')
 count +=1
-dfind = pd.read_csv('../orca/data/scenario_runs/%s/indicators-%s.csv'%(sc,sc), index_col = 0, parse_dates = True)
+dfind = pd.read_csv('orca/data/scenario_runs/%s/indicators-%s.csv'%(sc,sc), index_col = 0, parse_dates = True)
 dfind = dfind[indicator_codes]
 dfind['I57'] = dfind['I57']*0.393701*1.2 #cm to inches
 Model_orca = Model(P, df, dfind, 81, min_depth, dfh, SHA_baseline[sc], ORO_baseline[sc], FOL_baseline[sc], baseline_run = False)
