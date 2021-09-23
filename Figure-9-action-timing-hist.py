@@ -94,6 +94,8 @@ for i,action_count in enumerate(dfcount['Sites3'].values):
 	year = i+2020
 	for j in range(0,int(action_count)):
 		Offstream3_count.append(year-2)
+Offstream_count['Offstream 3'] = Offstream3_count
+
 sns.histplot(Offstream_count,ax = ax1, bins = 16,element="step",fill = False, alpha = 0.15)
 
 ##########Demand
