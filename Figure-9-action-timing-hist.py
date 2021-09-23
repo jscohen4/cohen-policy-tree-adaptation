@@ -5,8 +5,7 @@ import json
 import seaborn as sns
 
 def init_plotting():
-  sns.set_style("darkgrid", {"axes.facecolor": "0.8"}) 
-  # plt.rcParams['figure.figsize'] = (15, 8)
+  sns.set_style("whitegrid")
   plt.rcParams['figure.figsize'] = (9,7)
   plt.rcParams['font.family'] = 'DejaVu Sans'
   plt.rcParams['font.weight'] = 'bold'
